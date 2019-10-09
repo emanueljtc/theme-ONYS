@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/emanueljtc/theme-ONYS/issues"
   },
-  "homepage": "https://github.com/emanueljtc/theme-ONYS#readme"
+  "homepage": "https://github.com/emanueljtc/theme-ONYS#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
 }
