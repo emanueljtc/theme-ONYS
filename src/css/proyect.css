@@ -1,35 +1,54 @@
 /*Paleta de colores*/
 /* Estilos Customs para el Main en Pages Proyects */
-.main {
-  display: grid;
-  grid-template-rows: 10% 1fr;
-  grid-template-columns: 1fr; }
-
 /*Estilos de la Cabecera Menu Top*/
 .content-nav-top {
   width: 100%;
-  height: 100%; }
+  height: 15%; }
+  .content-nav-top.col-12 {
+    padding: 0; }
   .content-nav-top .nav {
     position: relative;
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: 10% 25% auto;
-    grid-template-areas: "logo search items";
     background-color: #F8F8F8; }
-    .content-nav-top .nav .content-logo {
-      grid-area: logo;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #1A1A1A;
-      letter-spacing: 4.5px;
-      font-size: 45px; }
+    .content-nav-top .nav .row {
+      width: inherit;
+      height: inherit;
+      margin: 0; }
+      .content-nav-top .nav .row .content-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1A1A1A;
+        letter-spacing: 4.5px;
+        font-size: 45px; }
+        .content-nav-top .nav .row .content-logo.col-md-1 {
+          padding: 0; }
+      .content-nav-top .nav .row .content-search {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .content-nav-top .nav .row .content-search.col-md-2 {
+          padding: 0; }
+      .content-nav-top .nav .row .content-items {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .content-nav-top .nav .row .content-items.col-md-8 {
+          padding: 0; }
 
 /*Estilos del contenedor lateral*/
 .content-nav-lateral {
-  display: grid;
-  grid-template-columns: 10% 1fr;
-  grid-template-areas: "menu-l content"; }
-  .content-nav-lateral .content-menu {
-    background-color: #F8F8F8; }
+  width: 100%;
+  height: 85%; }
+  .content-nav-lateral.col-12 {
+    padding: 0; }
+  .content-nav-lateral .row {
+    margin: 0;
+    width: 100%;
+    height: 100%; }
+    .content-nav-lateral .row .content-menu {
+      background-color: #F8F8F8;
+      height: 100%; }
+    .content-nav-lateral .row .content-body.col-md-11 {
+      padding: 0; }
