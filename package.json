@@ -1,0 +1,19 @@
+{
+  "name": "theme-onys",
+  "version": "1.0.0",
+  "description": "Maquetado del tema de Wordpress para ONYS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanueljtc/theme-ONYS.git"
+  },
+  "author": "Ing. Emanuel Torres Clemente",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emanueljtc/theme-ONYS/issues"
+  },
+  "homepage": "https://github.com/emanueljtc/theme-ONYS#readme"
+}
