@@ -2,45 +2,89 @@
 @import 'variables';
 
 /* Estilos Customs para el Main en Pages Proyects */
-.main {
-  display: grid;
-  grid-template-rows: 10% 1fr;
-  grid-template-columns: 1fr;
-}
+.main {}
 
 /*Estilos de la Cabecera Menu Top*/
 .content-nav-top {
   width: 100%;
-  height: 100%;
+  height: 15%;
+
+  &.col-12 {
+    padding: 0;
+  }
 
   .nav {
     position: relative;
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: 10% 25% auto;
-    grid-template-areas: "logo search items";
     background-color: $background;
 
-    .content-logo {
-      grid-area: logo;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: $logo;
-      letter-spacing: 4.5px;
-      font-size: 45px;
+    .row {
+      width: inherit;
+      height: inherit;
+      margin: 0;
+
+      .content-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $logo;
+        letter-spacing: 4.5px;
+        font-size: 45px;
+
+        &.col-md-1 {
+          padding: 0;
+        }
+      }
+
+      .content-search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.col-md-2 {
+          padding: 0;
+        }
+      }
+
+      .content-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.col-md-8 {
+          padding: 0;
+        }
+      }
     }
+
   }
 }
 
 /*Estilos del contenedor lateral*/
 .content-nav-lateral {
-  display: grid;
-  grid-template-columns: 10% 1fr;
-  grid-template-areas: "menu-l content";
+  width: 100%;
+  height: 85%;
 
-  .content-menu {
-    background-color: $background;
+  &.col-12 {
+    padding: 0;
   }
+
+  .row {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    .content-menu {
+      background-color: $background;
+      height: 100%;
+    }
+
+    .content-body {
+      &.col-md-11 {
+        padding: 0;
+      }
+    }
+  }
+
 }
