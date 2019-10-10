@@ -1,5 +1,6 @@
 @import 'colors';
 @import 'variables';
+@import 'fonts';
 
 /* Estilos Customs para el Main en Pages Proyects */
 .main {}
@@ -31,6 +32,7 @@
         color: $logo;
         letter-spacing: 4.5px;
         font-size: 45px;
+        font-family: 'CircularStd';
 
         &.col-md-1 {
           padding: 0;

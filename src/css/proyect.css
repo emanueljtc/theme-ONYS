@@ -1,5 +1,9 @@
 /*Paleta de colores*/
 /*Paleta de colores*/
+@font-face {
+  font-family: 'CircularStd';
+  src: url("../fonts/Circular/CircularStd-Book.otf") format("otf"), url(../fonts/Circular/CircularStd-Bold.otf) format("otf"), url(../fonts/Circular/CircularStd-Medium.otf) format("otf"); }
+
 /* Estilos Customs para el Main en Pages Proyects */
 /*Estilos de la Cabecera Menu Top*/
 .content-nav-top {
@@ -22,7 +26,8 @@
         align-items: center;
         color: #1A1A1A;
         letter-spacing: 4.5px;
-        font-size: 45px; }
+        font-size: 45px;
+        font-family: 'CircularStd'; }
         .content-nav-top .nav .row .content-logo.col-md-1 {
           padding: 0; }
       .content-nav-top .nav .row .content-search {
