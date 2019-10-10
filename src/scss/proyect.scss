@@ -55,8 +55,9 @@
 
       .content-search {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
+        padding: 0;
 
         &.col-md-2 {
           padding: 0;
@@ -65,12 +66,13 @@
 
       .content-items {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: space-around;
+        padding: 0;
 
-        @include media(md) {
+        /*  @include media(md) {
           justify-content: flex-end;
-        }
+        } */
 
         &.col-md-8 {
           padding: 0;
@@ -81,7 +83,6 @@
           font-weight: bold;
           color: $navitem;
           font-size: 15px;
-          padding-right: 20px;
 
           .nav-link {
             color: inherit;
