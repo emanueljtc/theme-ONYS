@@ -9,99 +9,109 @@
 /*Estilos de la Cabecera Menu Top*/
 .content-nav-top {
   width: 100%;
-  height: 160px;
+  height: auto;
+  padding: 0;
+
+  @include media(lg) {
+    height: 160px;
+  }
 
   &.col-12 {
     padding: 0;
   }
 
-  .nav {
+  .navbar {
     position: relative;
     width: 100%;
     height: 100%;
     background-color: $background;
+    padding: 10px;
 
-    .row {
-      width: inherit;
-      height: inherit;
-      margin: 0;
+    @include media(lg) {
+      padding: 0;
+      padding-left: 20px;
+    }
 
-      .content-logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $logo;
-        letter-spacing: 4.5px;
-        font-size: 20px;
-        font-family: 'Cera Pro';
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $logo;
+      letter-spacing: 4.5px;
+      font-size: 20px;
+      font-family: 'Cera Pro';
 
-        @include media(sm) {
-          font-size: 16px;
-        }
-
-        @include media(md) {
-          font-size: 25px;
-          justify-content: flex-end;
-        }
-
-        @include media(lg) {
-          font-size: 45px;
-        }
-
-        &.col-md-1 {
-          padding: 0;
-        }
+      @include media(sm) {
+        font-size: 16px;
       }
 
-      .content-search {
-        display: flex;
+      @include media(md) {
+        font-size: 25px;
         justify-content: flex-end;
-        align-items: center;
-        padding: 0;
-
-        &.col-md-2 {
-          padding: 0;
-        }
       }
 
-      .content-items {
+      @include media(lg) {
+        font-size: 45px;
+      }
+    }
+
+    .navbar-nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      @include media(md) {
+        width: 68%;
+      }
+    }
+
+    .content-search {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0;
+
+      &.col-md-2 {
+        padding: 0;
+      }
+    }
+
+    .navbar-collapse {
+
+
+      padding: 0;
+
+      @include media(lg) {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 0;
+      }
 
-        /*  @include media(md) {
-          justify-content: flex-end;
-        } */
+      .nav-item {
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color: $navitem;
+        font-size: 15px;
 
-        &.col-md-8 {
-          padding: 0;
-        }
+        .nav-link {
+          color: inherit;
+          display: inline-block;
 
-        .nav-item {
-          font-family: 'Montserrat';
-          font-weight: bold;
-          color: $navitem;
-          font-size: 15px;
+          &.es {
+            padding-right: 0;
+          }
 
-          .nav-link {
-            color: inherit;
-            display: inline-block;
-
-            &.es {
-              padding-right: 0;
-            }
-
-            &.en {
-              scroll-padding-right: 0;
-            }
+          &.en {
+            scroll-padding-right: 0;
           }
         }
       }
     }
-
   }
+
 }
+
 
 /*Estilos del contenedor lateral*/
 .content-nav-lateral {
