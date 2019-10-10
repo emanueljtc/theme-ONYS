@@ -270,7 +270,7 @@
 /*Estilos de la Cabecera Menu Top*/
 .content-nav-top {
   width: 100%;
-  height: 15%; }
+  height: 160px; }
   .content-nav-top.col-12 {
     padding: 0; }
   .content-nav-top .nav {
@@ -284,12 +284,22 @@
       margin: 0; }
       .content-nav-top .nav .row .content-logo {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         color: #1A1A1A;
         letter-spacing: 4.5px;
-        font-size: 45px;
+        font-size: 20px;
         font-family: 'Cera Pro'; }
+        @media (min-width: 720px) {
+          .content-nav-top .nav .row .content-logo {
+            font-size: 16px; } }
+        @media (min-width: 960px) {
+          .content-nav-top .nav .row .content-logo {
+            font-size: 25px;
+            justify-content: flex-end; } }
+        @media (min-width: 1600px) {
+          .content-nav-top .nav .row .content-logo {
+            font-size: 45px; } }
         .content-nav-top .nav .row .content-logo.col-md-1 {
           padding: 0; }
       .content-nav-top .nav .row .content-search {
@@ -314,7 +324,10 @@
   .content-nav-lateral .row {
     margin: 0;
     width: 100%;
-    height: 100%; }
+    height: 10%; }
+    @media (min-width: 720px) {
+      .content-nav-lateral .row {
+        height: 100%; } }
     .content-nav-lateral .row .content-menu {
       background-color: #F8F8F8;
       height: 100%; }

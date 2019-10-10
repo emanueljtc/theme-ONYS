@@ -1,0 +1,39 @@
+// ==========  Mixins para los Media Queries  ========== //
+@mixin media($consulta) {
+
+  $media-xxs: "(min-width : 576px)"; // Extra Small
+  $media-xs: "(min-width : 577px)"; // Small
+  $media-sm: "(min-width: 720px)"; //  Medium
+  $media-md: "(min-width: 960px)"; // Large
+  $media-lg: "(min-width: 1600px)"; // Extra Large
+
+  @if $consulta==xxs {
+    @media #{$media-xxs} {
+      @content;
+    }
+  }
+
+  @if $consulta==xs {
+    @media #{$media-xs} {
+      @content;
+    }
+  }
+
+  @else if $consulta==sm {
+    @media #{$media-sm} {
+      @content;
+    }
+  }
+
+  @else if $consulta==md {
+    @media #{$media-md} {
+      @content;
+    }
+  }
+
+  @else if $consulta==lg {
+    @media #{$media-lg} {
+      @content;
+    }
+  }
+}
