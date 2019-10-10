@@ -68,8 +68,33 @@
         justify-content: center;
         align-items: center;
 
+        @include media(md) {
+          justify-content: flex-end;
+        }
+
         &.col-md-8 {
           padding: 0;
+        }
+
+        .nav-item {
+          font-family: 'Montserrat';
+          font-weight: bold;
+          color: $navitem;
+          font-size: 15px;
+          padding-right: 20px;
+
+          .nav-link {
+            color: inherit;
+            display: inline-block;
+
+            &.es {
+              padding-right: 0;
+            }
+
+            &.en {
+              scroll-padding-right: 0;
+            }
+          }
         }
       }
     }
