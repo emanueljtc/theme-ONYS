@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="./src/css/global.css">
   <!-- Proyectos Style -->
   <link rel="stylesheet" href="./src/css/proyect.css">
+  <!-- Font Awesome -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -28,8 +31,10 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input class="form-control mr-sm-2 d-none" type="search" placeholder="Search">
+            <button class="btn my-2 my-sm-0" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
           </form>
           <ul class="navbar-nav ml-0 mt-2 mt-lg-0">
             <li class="nav-item">
@@ -46,7 +51,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link disabled es" href="#" tabindex="-1" aria-disabled="true">Es</a>
-              <a class="nav-link disabled en" href="#" tabindex="-1" aria-disabled="true"> /En</a>
+              <a class="nav-link disabled en" href="#" tabindex="-1" aria-disabled="true"> / En</a>
             </li>
           </ul>
         </div>
@@ -55,11 +60,24 @@
     <div class="content-nav-lateral col-12">
       <div class="row">
         <div class="content-menu col-md-1">
-          menu
+          <ul class="navbar-nav-lateral">
+            <li class="nav-item disabled">
+              Proyectos Internacionales
+            </li>
+            <li class="nav-item active">
+              Proyectos en España
+            </li>
+            <li class="nav-item disabled">
+              Todos
+            </li>
+          </ul>
         </div>
         <div class="content-body col-md-11">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis eum iure facere delectus iste ullam,
-          tempora ipsa quas earum beatae voluptatem saepe quaerat eveniet qui architecto. Esse, explicabo ratione?
+          <div class="row">
+            <div class="col-a col-md-4"></div>
+            <div class="col-b col-md-4"></div>
+            <div class="col-c col-md-4"></div>
+          </div>
         </div>
       </div>
     </div>

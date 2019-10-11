@@ -104,9 +104,22 @@
 
           &.en {
             scroll-padding-right: 0;
+            color: $inactive;
           }
+
+          /* &.disabled {
+            color: $inactive;
+
+            &.es {
+              color: $navitem;
+            }
+          } */
         }
+
+
       }
+
+
     }
   }
 
@@ -134,11 +147,47 @@
     .content-menu {
       background-color: $background;
       height: 100%;
+
+      .navbar-nav-lateral {
+        padding: 0;
+        margin: 0;
+
+        .nav-item {
+          list-style: none;
+          font-family: 'Montserrat';
+          font-weight: bold;
+          color: $navitem;
+          font-size: 15px;
+
+          &.disabled {
+            color: $inactive;
+          }
+
+          &.active {
+            color: $active;
+          }
+        }
+      }
     }
 
     .content-body {
+
       &.col-md-11 {
         padding: 0;
+      }
+
+      .row {
+        .col-a {
+          background-color: #b1b17f;
+        }
+
+        .col-b {
+          background-color: #202046;
+        }
+
+        .col-c {
+          background-color: #4c0505;
+        }
       }
     }
   }
